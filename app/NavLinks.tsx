@@ -1,8 +1,13 @@
 import React from 'react';
 import { categories } from '@/constants';
+import NavLink from './NavLink';
 
 export default function NavLinks() {
   return (
-    <div>NavLinks</div>
+    <nav>
+        {categories.map((category,i) => (
+            <NavLink key={i} category={category} isActive={true} />
+        ))}
+    </nav>
   )
 }
