@@ -2,6 +2,7 @@ import React from 'react'
 import {Bars3Icon} from "@heroicons/react/24/solid";
 import Link from 'next/link';
 import NavLinks from './NavLinks';
+import SearchBox from './SearchBox';
 
 export default function Header() {
   return (
@@ -18,12 +19,9 @@ export default function Header() {
             </div>
         </div>
 
-        {/*NavLinks*/}
-
         <NavLinks />
 
-        {/*SearchBox*/}
-
+        <SearchBox />
     </header>
   )
 }
